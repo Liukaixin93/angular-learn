@@ -1,0 +1,32 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">模板内部的局部变量</div>
+  <div class="panel-body">
+    <input #heroInput>
+    <p>{{ heroInput.value }}</p>
+    <button class="btn btn-success" (click)="sayHello(heroInput.value)">局部变量</button>
+  </div>
+</div>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">值绑定（通过方括号[]的形式）</div>
+  <div class="panel-body">
+    <img class="demoImg" [src]="imgSrc" />
+    <button class="btn btn-success" (click)="changeSrc()">修改图片路径</button>
+  </div>
+</div>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">事件绑定（通过圆括号()的形式）</div>
+  <div class="panel-body">
+    <button class="btn btn-success" (click)="click($event)">事件绑定</button>
+  </div>
+</div>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">双向绑定</div>
+  <div class="panel-body">
+    <app-font-resizer [(size)]="fontSizePx"></app-font-resizer>
+    <div [style.font-size.px]="fontSizePx">fontSize: {{ fontSizePx }}px</div>
+  </div>
+</div>
+  

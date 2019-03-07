@@ -1,0 +1,8 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">第一种：父子组件通信</div>
+  <div class="panel-body">
+    <!-- 在模板里通过 # 设置局部变量的方式，调用子组件模板的方法，该局部变量只在模板内部好使，可以通过viewChild -->
+    <app-child #child (follow)="doSomething()" panelTitle="设置子组件标题"></app-child>
+    <button class="btn btn-success" (click)="child.childFn()">调用子组件方法</button>
+  </div>
+</div>
