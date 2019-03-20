@@ -19,6 +19,11 @@ import { ChildTwoComponent } from './component-communication/brother-and-brother
 import { LocalStorageComponent } from './component-communication/local-storage/local-storage.component';
 import { ChildFirstComponent } from './component-communication/local-storage/child-first/child-first.component';
 import { ChildSecondComponent } from './component-communication/local-storage/child-second/child-second.component';
+import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { TestOnChangesComponent } from './test-on-changes/test-on-changes.component';
+import { Child111Component } from './test-on-changes/child111/child111.component';
+import { TestNgContentComponent } from './test-ng-content/test-ng-content.component';
+import { Child22Component } from './test-ng-content/child22/child22.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +40,12 @@ import { ChildSecondComponent } from './component-communication/local-storage/ch
     ChildTwoComponent,
     LocalStorageComponent,
     ChildFirstComponent,
-    ChildSecondComponent
+    ChildSecondComponent,
+    LifeCycleComponent,
+    TestOnChangesComponent,
+    Child111Component,
+    TestNgContentComponent,
+    Child22Component
   ],
   imports: [
     BrowserModule,
