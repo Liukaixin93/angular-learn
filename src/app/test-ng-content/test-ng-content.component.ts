@@ -12,4 +12,12 @@ export class TestNgContentComponent implements OnInit {
   ngOnInit() {
   }
 
+  ngAfterContent() {
+    console.log("父组件ngAfterContent....");
+  }
+
+  ngAfterContentChecked() {
+    console.log("父组件ngAfterContentChecked....");
+  }
+
 }

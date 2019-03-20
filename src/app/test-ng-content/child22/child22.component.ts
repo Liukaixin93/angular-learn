@@ -12,4 +12,12 @@ export class Child22Component implements OnInit {
   ngOnInit() {
   }
 
+  ngAfterContent() {
+    console.log("子组件ngAfterContent....");
+  }
+
+  ngAfterContentChecked() {
+    console.log("子组件ngAfterContentChecked....");
+  }
+
 }
