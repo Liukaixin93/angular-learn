@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TestInterpolationComponent } from './test-interpolation.component';
+import { AnimationComponent } from './animation.component';
 
-describe('TestInterpolationComponent', () => {
-  let component: TestInterpolationComponent;
-  let fixture: ComponentFixture<TestInterpolationComponent>;
+describe('AnimationComponent', () => {
+  let component: AnimationComponent;
+  let fixture: ComponentFixture<AnimationComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TestInterpolationComponent ]
+      declarations: [ AnimationComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TestInterpolationComponent);
+    fixture = TestBed.createComponent(AnimationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
