@@ -8,8 +8,7 @@ import { Child1Component } from './child1/child1.component'
 })
 export class TestDynamicComponent implements OnInit {
 
-  @ViewChild('dynContent', {read: ViewContainerRef})
-  dynContent: ViewContainerRef;
+  @ViewChild('dynContent', {read: ViewContainerRef}) dynContent: ViewContainerRef;
 
   public showChild;
   public comp1: ComponentRef<Child1Component>;
