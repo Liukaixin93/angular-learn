@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 // import { JokesComponent } from './jokes/jokes.component';
 import { OrderListComponent } from './order-list/order-list.component';
 import { UserListComponent } from './user-list/user-list.component';
+import { PreloadAllComponent } from './preload-all/preload-all.component';
 
 export const Routes = [
 	{
@@ -35,6 +36,10 @@ export const Routes = [
 	{
 		path: 'user-list',
 		component: UserListComponent,
+	},
+	{
+		path: 'preload-all',
+		loadChildren: './preload-all/preload-all.module#PreloadAllModule'
 	},
 	{
 		path: '**', //路径其他输入，跳转首页

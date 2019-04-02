@@ -25,8 +25,12 @@
                 <a  [routerLink]="['user-list', 1]">用户列表</a>
             </li> -->
             <li routerLinkActive="active">
-                <a  [routerLink]="['user-list', {userName:'lkx'}]">用户列表</a>
+                <a [routerLink]="['user-list', {userName:'lkx'}]">用户列表</a>
             </li>
+            <!-- <li routerLinkActive="active">
+                <a [routerLink]="preload-all">预加载</a>
+            </li> -->
+
         </ul>
     </div>
 </div>

@@ -9,23 +9,26 @@ import { Routes } from './app.routes';
 
 import { UserListComponent } from './user-list/user-list.component';
 import { OrderListComponent } from './order-list/order-list.component';
-import { PreloadAllComponent } from './preload-all/preload-all.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
 		UserListComponent,
 		OrderListComponent,
-		PreloadAllComponent,
 	],
 	imports: [
 		BrowserModule,
 		FormsModule,
 		// AppRoutingModule,
+
+		//路由默认配置
 		RouterModule.forRoot(Routes),
 
 		//预加载所有模块
-		RouterModule.forRoot(Routes, {preloadingStrategy: PreloadAllModules}),
+		// RouterModule.forRoot(Routes, {preloadingStrategy: PreloadAllModules}),
+
+		//自定义预加载模块
+		
 	],
 	providers: [//放服务的
 

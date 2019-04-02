@@ -21,7 +21,7 @@ export class JokesComponent implements OnInit {
 
     //监听路由事件
     this.router.events.subscribe((event) => {
-      console.log(event);
+      // console.log(event);
     })
 
   }
