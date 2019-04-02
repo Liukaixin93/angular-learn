@@ -13,11 +13,10 @@ export class UserListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    //获取路由传值长成这样 http://localhost:4200/user-list;userName=lkx
     this.activatedRoute.params.subscribe((params) => {
       console.log(params);
     })
-
-    
   }
 
 }

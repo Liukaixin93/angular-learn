@@ -16,9 +16,10 @@ export class HomeComponent implements OnInit {
   }
 
   manualNav() {
+    //手动触发调转到jokes并传值
     this.router.navigate(["/jokes"], {
       queryParams: { userId: '111', userName: 'lkx123' }
-    }); //手动触发调转到jokes
+    }); 
   }
 
 }
