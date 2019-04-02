@@ -12,11 +12,11 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    component: HomeComponent
+    loadChildren: './home/home.module#HomeModule'
   },
   {
     path: 'jokes',
-    component: JokesComponent
+    loadChildren: './jokes/jokes.module#JokesModule'
   },
   {
     path: '**', //路径其他输入，跳转首页
