@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'user-list',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserListComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public activatedRoute: ActivatedRoute,
+  ) { }
 
   ngOnInit() {
+    this.activatedRoute.params.subscribe((params) => {
+      console.log(params);
+    })
+
+    
   }
 
 }

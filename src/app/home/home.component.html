@@ -1,5 +1,16 @@
-<div class="panel panel-primary">
-  <div class="panel-heading">Home模块</div>
-  <div class="panel-body">
-  </div>
+<div class="row">
+	<div class="col-xs-3">
+		<div class="list-group">
+			<a href="javascript:void(0)" routerLinkActive="active" class="list-group-item">nav1</a>
+			<a routerLink="pictures" routerLinkActive="active" class="list-group-item">picture</a>
+			<a routerLink="word" routerLinkActive="active" class="list-group-item">word</a>
+			<!-- <a href="#" class="list-group-item">nav4</a> -->
+		</div>
+		<user-info></user-info>
+		<button class="btn btn-success" (click)="manualNav()">手动导航</button>
+	</div>
+	<div class="col-xs-9">
+		<router-outlet></router-outlet>
+	</div>
+	
 </div>

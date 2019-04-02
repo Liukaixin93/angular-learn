@@ -1,18 +1,26 @@
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home.component';
+import { PictureComponent } from './picture/picture.component';
+import { WordComponent } from './word/word.component';
 
 export const homeRoutes = [
-    {
-      path: '',
-      component: HomeComponent
-    },
-    {
-      path: 'home',
-      component: HomeComponent
-    },
-    {
-      path: '**', //路径其他输入，跳转首页
-      component: HomeComponent
-    },
+	{
+		path: '',
+		component: HomeComponent,
+    	children: [
+			{
+				path: '',
+				component: PictureComponent
+			},
+			{
+				path: 'pictures',
+				component: PictureComponent
+			},
+			{
+				path: 'word',
+				component: WordComponent
+			},
+		]
+	},
 ];
 
