@@ -20,6 +20,7 @@ import { TestContentChildComponent } from './test-content-child/test-content-chi
 import { ChildFourComponent } from './test-content-child/child-four/child-four.component';
 import { ChildFiveComponent } from './test-content-child/child-five/child-five.component';
 import { TestViewChildComponent } from './test-view-child/test-view-child.component';
+import { MyHighLightDirective } from './common-directive/my-high-light.directive';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { TestViewChildComponent } from './test-view-child/test-view-child.compon
     ChildFourComponent,
     ChildFiveComponent,
     TestViewChildComponent,
+    MyHighLightDirective,
   ],
   imports: [
     BrowserModule,
